@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyRabbitMQ.publisher", "UdemyRabbitMQ.publisher\UdemyRabbitMQ.publisher.csproj", "{76DF5A43-26A0-4640-A3AA-91E3F50EEBFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyRabbitMQ.subscriber", "UdemyRabbitMQ.subscriber\UdemyRabbitMQ.subscriber.csproj", "{D7BF4F32-5254-438C-B8EE-4A81D3807F09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76DF5A43-26A0-4640-A3AA-91E3F50EEBFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76DF5A43-26A0-4640-A3AA-91E3F50EEBFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76DF5A43-26A0-4640-A3AA-91E3F50EEBFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76DF5A43-26A0-4640-A3AA-91E3F50EEBFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7BF4F32-5254-438C-B8EE-4A81D3807F09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7BF4F32-5254-438C-B8EE-4A81D3807F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7BF4F32-5254-438C-B8EE-4A81D3807F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7BF4F32-5254-438C-B8EE-4A81D3807F09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8D454E0-5473-4628-8BE7-E302B819F942}
+	EndGlobalSection
+EndGlobal
