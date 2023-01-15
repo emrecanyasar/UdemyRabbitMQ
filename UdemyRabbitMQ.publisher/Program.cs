@@ -1,4 +1,6 @@
-﻿using System;
+﻿using RabbitMQ.Client;
+using System;
+using System.Text;
 
 namespace UdemyRabbitMQ.publisher
 {
@@ -6,7 +8,25 @@ namespace UdemyRabbitMQ.publisher
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var factory = new ConnectionFactory();
+
+            factory.Uri = new Uri("amqps://njfcbmyi:LRYBUUM7GRFnO_SpgdX7E1Hf0Ra_QobR@moose.rmq.cloudamqp.com/njfcbmyi");
+
+            using var connection = factory.CreateConnection();
+
+            var channel = connection.CreateModel();
+
+            channel.QueueDeclare("hello-queue",true,false,false);
+
+            string message = "hello world";
+
+            var messageBody=Encoding.UTF8.GetBytes(message);
+
+            channel.BasicPublish(string.Empty, "hello-queue", null, messageBody);
+
+            Console.WriteLine("Mesaj gönderilmiştir");
+
+            Console.ReadLine();
         }
     }
 }
